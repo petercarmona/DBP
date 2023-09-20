@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario a CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form>
+            <!-- Name -->
+            <label for="fname">Nombre:</label><br>
+            <input type="text" name="fname" id="fname"><br>
+
+            <!-- Last Name -->
+            <label for="flastname">Apellido:</label><br>
+            <input type="text" name="flastname" id="flastname"><br>
+
+            <!-- Born Date -->
+            <label for="fborndate">Fecha de nacimiento:</label><br>
+            <input type="date" name="fborndate" id="fborndate"><br>
+
+            <!-- Ocupation -->
+            <label for="focupation">Ocupación:</label><br>
+            <input type="text" name="focupation" id="focupation"><br>
+
+            <!-- Contact -->
+            <label for="ftel">Teléfono:</label><br>
+            <input type="text" name="ftel" id="ftel"><br>
+
+            <label for="femail">Email:</label><br>
+            <input type="text" name="femail" id="femail"><br>
+
+            <!-- Nationality -->
+            <label for="fnationality">Nacionalidad:</label><br>
+            <select id="nacionalidades">
+                <option value="">-- Selecione una Opción --</option>
+                <option value="argentina">Argentina</option>
+                <option value="boliviana">Boliviana</option>
+                <option value="brasilena">Brasileña</option>
+                <option value="chilena">Chilena</option>
+                <option value="colombiana">Colombiana</option>
+                <option value="costarricense">Costarricense</option>
+                <option value="cubana">Cubana</option>
+                <option value="ecuatoriana">Ecuatoriana</option>
+                <option value="salvadorena">Salvadoreña</option>
+                <option value="guatemalteca">Guatemalteca</option>
+                <option value="hondurena">Hondureña</option>
+                <option value="mexicana">Mexicana</option>
+                <option value="nicaraguense">Nicaragüense</option>
+                <option value="panamena">Panameña</option>
+                <option value="paraguaya">Paraguaya</option>
+                <option value="peruana">Peruana</option>
+                <option value="puertorriquena">Puertorriqueña</option>
+                <option value="dominicana">Dominicana</option>
+                <option value="uruguaya">Uruguaya</option>
+                <option value="venezolana">Venezolana</option>
+            </select><br>
+
+            <!-- Language Proficency -->
+            <label for="flanguage">Lenguajes de programación:</label><br>
+            <select id="flanguage" multiple>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="cpp">C++</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+                <option value="swift">Swift</option>
+                <option value="typescript">TypeScript</option>
+                <option value="go">Go</option>
+                <option value="rust">Rust</option>
+                <option value="dart">Dart</option>
+                <option value="kotlin">Kotlin</option>
+            </select><br>
+
+            <!-- Aptitudes -->
+            <label for="faptitude">Seleciona la Aptitud que más te representa:</label><br>
+            <input list="brwoser" name="faptitude" id="faptitude"><br>
+            <datalist id="Aptitudes">
+                <option value="Creatividad">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <!-- Skills -->
+            <label>Habilidades:</label><br>
+
+            <input type="checkbox" id="fcomunicacion" value="Comunicación">
+            <label for="comunicacion">Comunicación</label><br>
+
+            <input type="checkbox" id="ftrabajo_equipo" value="Trabajo en equipo">
+            <label for="trabajo_equipo">Trabajo en equipo</label><br>
+
+            <input type="checkbox" id="fcreatividad" value="Creatividad">
+            <label for="creatividad">Creatividad</label><br>
+
+            <input type="checkbox" id="fresolucion_problemas" value="Resolución de problemas">
+            <label for="resolucion_problemas">Resolución de problemas</label><br>
+
+            <input type="checkbox" id="fliderazgo" value="Liderazgo">
+            <label for="liderazgo">Liderazgo</label><br>
+
+            <!-- profile -->
+            <label for="profile">Perfil:</label><br>
+            <textarea id="profile" rows="4" cols="50" placeholder="Enter your profile"></textarea>
+        </form>
+</body>
+</html>
